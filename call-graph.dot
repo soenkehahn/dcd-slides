@@ -1,0 +1,17 @@
+digraph g {
+  "A.foo" -> "A.baz";
+  "A.bar" -> "A.baz";
+  "A.baz";
+  "B.x" -> "B.y";
+  "B.y" -> "B.x";
+  "B.z" -> "A.bar";
+
+  // roots:
+  "B.x" [ color = "blue"; ];
+  "B.y" [ color = "blue"; ];
+  "A.bar" [ color = "blue"; ];
+
+  // dead:
+  "A.foo" [ color = "red"; ];
+  "B.z" [ color = "red"; ];
+}
