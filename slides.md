@@ -4,6 +4,8 @@
 
 # Overview of this talk
 
+https://github.com/soenkehahn/dcd-slides
+
 - Motivation
     - The Problem
     - What can `ghc` do?
